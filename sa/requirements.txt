@@ -1,0 +1,7 @@
+autopep8
+Flask
+flask-restx
+vaderSentiment
+Flask-Cors
+googletrans
+gunicorn

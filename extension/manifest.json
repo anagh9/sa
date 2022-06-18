@@ -1,0 +1,30 @@
+{
+    "name": "Sentiment Catcher",
+    "version": "0.0.1",
+    "description": "Extension to analyse sentiments analyse sentiments",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "logo.png"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+                "https://cdn.jsdelivr.net/npm/chart.js"
+            ],
+            "js": [
+                "send_data.js",
+                "jquery.min.js",
+                "chart.js"
+            ],
+            "css": [
+                "bootstrap.min.css"
+            ]
+        }
+    ]
+}

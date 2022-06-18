@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+
+<body style="width: 500px; padding: 2%;">
+    <div class="container">
+        <div class="card d-none" id="card-body">
+            <div class="card-body">
+                <h5 class="card-title">
+                    Content Sentiment
+                </h5>
+                <div>
+                    <span class="card-text" id="card-text">Video have <span id="main">
+
+                    </span></span>
+                    <span class="card-text"> Sentiments.</span>
+                    <div>
+                        <canvas id="myChart" width="400" height="400"></canvas>
+                    </div>
+                </div>
+                <!-- <a href="#" class="btn btn-primary">Know More</a> -->
+            </div>
+        </div>
+        <div id="middle-data" class="d-flex justify-content-center align-items-center d-none">
+            <div class="spinner-border text-success" role="status"></div>
+            <div>
+                &nbsp;Loading...
+            </div>
+        </div>
+        <div id="form">
+            <form action="">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <button type="submit" class="col-auto btn btn-primary">Get Sentiment Analysis</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-comment d-none card mt-1 mb-1" id="form-comment">
+            <div class="card-body">
+                <div class="card-title d-flex justify-content-center align-items-center">
+                    <button class="btn btn-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                        Show top comments
+                    </button>
+                </div>
+                <div class="card-text">
+                    <ul class="list-group list-group-flush d-none" id="drop-down-area">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="warning" class="d-none mt-1 d-flex justify-content-center align-items-center" style="color: red;">
+            <div>Extension only available on youtube.</div>
+        </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="./jquery.min.js"></script>
+    <script src="./chart.js"></script>
+    <script src="send_data.js"></script>
+    <!-- <script src="./script.js"></script> -->
+</body>
+
+</html>
+
